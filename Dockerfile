@@ -21,3 +21,5 @@ CMD ["/usr/local/bin/docker-entrypoint"]
 # Add project from current repo to enable automated build
 WORKDIR "${APACHE_DOCROOT}"
 ADD . ./
+
+RUN chown -R www-data:www-data "${APACHE_DOCROOT}"

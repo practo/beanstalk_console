@@ -2,7 +2,7 @@
 set -e
 
 # Change ownership for apache happiness
-chown -R www-data:www-data "${APACHE_DOCROOT}"
+# chown -R www-data:www-data "${APACHE_DOCROOT}"
 
 rm -f /var/run/apache2/apache2.pid
 
